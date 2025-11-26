@@ -1,0 +1,2839 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='IndianOnlineFraudDetection' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' inline='true' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='textscan.0ut305a0qyft5h1fpzkuv19m1vtj'>
+            <connection class='textscan' directory='C:/Users/biswa/Downloads' filename='Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ut305a0qyft5h1fpzkuv19m1vtj' name='Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv' table='[Updated_Inclusive_Indian_Online_Scam_Dataset (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='transaction_id' ordinal='0' />
+            <column datatype='real' name='customer_id' ordinal='1' />
+            <column datatype='real' name='merchant_id' ordinal='2' />
+            <column datatype='real' name='amount' ordinal='3' />
+            <column datatype='datetime' name='transaction_time' ordinal='4' />
+            <column datatype='real' name='is_fraudulent' ordinal='5' />
+            <column datatype='string' name='card_type' ordinal='6' />
+            <column datatype='string' name='location' ordinal='7' />
+            <column datatype='string' name='purchase_category' ordinal='8' />
+            <column datatype='real' name='customer_age' ordinal='9' />
+            <column datatype='string' name='fraud_type' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[transaction_id]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>transaction_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[merchant_id]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>merchant_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[transaction_time]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>transaction_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_fraudulent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[is_fraudulent]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>is_fraudulent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>card_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[card_type]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>card_type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchase_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[purchase_category]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>purchase_category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_age]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>customer_age</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fraud_type]</local-name>
+            <parent-name>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv]</parent-name>
+            <remote-alias>fraud_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Fraud Rate(%)' datatype='real' name='[Calculation_1532068300614103040]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [is_fraudulent] = 1 THEN 1 ELSE 0 END) / COUNT([transaction_id]) * 100' />
+      </column>
+      <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[customer_age]' peg='0' size='10' />
+      </column>
+      <column caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv' datatype='table' name='[__tableau_internal_object_id__].[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+      <column caption='Customer Age' datatype='real' name='[customer_age]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='real' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+      <column caption='Purchase Category' datatype='string' name='[purchase_category]' role='dimension' type='nominal' />
+      <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+      <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+      <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Card Type,Is Fraudulent)' hidden='true' name='[Action (Card Type,Is Fraudulent)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[card_type]' />
+          <groupfilter function='level-members' level='[is_fraudulent]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Fraud Type)' hidden='true' name='[Action (Fraud Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[fraud_type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Is Fraudulent)' hidden='true' name='[Action (Is Fraudulent)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[is_fraudulent]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Is Fraudulent,Location)' hidden='true' name='[Action (Is Fraudulent,Location)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[is_fraudulent]' />
+          <groupfilter function='level-members' level='[location]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Is Fraudulent,MONTH(Transaction Time))' hidden='true' name='[Action (Is Fraudulent,MONTH(Transaction Time))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[is_fraudulent]' />
+          <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Is Fraudulent,Merchant Id)' hidden='true' name='[Action (Is Fraudulent,Merchant Id)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[is_fraudulent]' />
+          <groupfilter function='level-members' level='[merchant_id]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Is Fraudulent,YEAR(Transaction Time))' hidden='true' name='[Action (Is Fraudulent,YEAR(Transaction Time))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[is_fraudulent]' />
+          <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/biswa/Downloads/Indian Online Fraud Detection.twb Files/Data/TableauTemp/#TableauTemp_1hlzwj30jg72wg122of4p0wb9swg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/03/2025 03:11:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>transaction_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[transaction_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1497</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1477</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>merchant_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[merchant_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>merchant_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1434</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[transaction_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_time</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1463</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_fraudulent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[is_fraudulent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_fraudulent</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>card_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[card_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>card_type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>purchase_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[purchase_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>purchase_category</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[customer_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_age</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fraud_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:is_fraudulent:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv' id='Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv_7A138471412F41F29E6300BF08E7B7CC'>
+            <properties context=''>
+              <relation connection='textscan.0ut305a0qyft5h1fpzkuv19m1vtj' name='Updated_Inclusive_Indian_Online_Scam_Dataset (1).csv' table='[Updated_Inclusive_Indian_Online_Scam_Dataset (1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='real' name='transaction_id' ordinal='0' />
+                  <column datatype='real' name='customer_id' ordinal='1' />
+                  <column datatype='real' name='merchant_id' ordinal='2' />
+                  <column datatype='real' name='amount' ordinal='3' />
+                  <column datatype='datetime' name='transaction_time' ordinal='4' />
+                  <column datatype='real' name='is_fraudulent' ordinal='5' />
+                  <column datatype='string' name='card_type' ordinal='6' />
+                  <column datatype='string' name='location' ordinal='7' />
+                  <column datatype='string' name='purchase_category' ordinal='8' />
+                  <column datatype='real' name='customer_age' ordinal='9' />
+                  <column datatype='string' name='fraud_type' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 10 (generated)' name='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud type distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 11 (generated)' name='[Action11_457615F3DFAB4DBABE97219207DB7D63]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Merchant Risk' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 12 (generated)' name='[Action12_A31398E900FF488A906C64413DC3357C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Spending by Age' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action1_34BD768133EE47859C4C4A2C33E0C740]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Total Transaction' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_F8A2E6C5941D40109BF174E1A770636C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fradulent Transaction' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_5F8313523C354610A7D1F041A91C08C0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Total Fraud Amount' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_94C95B4A914B4BF4BA1F418644D8830D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud Rate(%)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_960BE8800DB44B0DA194828F75F30138]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud Transaction Over Time' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6_D784499C609249C6A85C39098BBA3A33]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud Distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud by Card Type' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8_370D62207AEB4D03B27988332BE4A5E0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud by Location' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 9 (generated)' name='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Indian Online Fraud Detection Dashboard' type='sheet' worksheet='Fraud Over Time' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Indian Online Fraud Detection Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Fradulent Transaction'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Fraud Transactions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FradulentTransaction' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]'>
+            <groupfilter function='level-members' level='[none:is_fraudulent:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='18' />
+            <format attr='font-weight' value='bold' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CC4079D3-8812-437C-A4D0-4221196C9392}' />
+    </worksheet>
+    <worksheet name='Fraud Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Fraud vs Legitimate Transactions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FraudDistribution' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' />
+              <size column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' />
+              <text column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{28B4D2E9-F76A-405F-959B-C36144F01FF5}' />
+    </worksheet>
+    <worksheet name='Fraud Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Fraudulent Transactions Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FraudOverTime' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</rows>
+        <cols>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[mn:transaction_time:ok]</cols>
+      </table>
+      <simple-id uuid='{DBE60113-9CA0-496E-9764-481B10C78096}' />
+    </worksheet>
+    <worksheet name='Fraud Rate(%)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Fraud Rate(%)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FraudRate' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Fraud Rate(%)' datatype='real' name='[Calculation_1532068300614103040]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [is_fraudulent] = 1 THEN 1 ELSE 0 END) / COUNT([transaction_id]) * 100' />
+            </column>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1532068300614103040]' derivation='User' name='[usr:Calculation_1532068300614103040:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[usr:Calculation_1532068300614103040:qk]' value='p0.0%' />
+            <format attr='font-weight' field='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[usr:Calculation_1532068300614103040:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[usr:Calculation_1532068300614103040:qk]' value='18' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[usr:Calculation_1532068300614103040:qk]' value='normal' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[usr:Calculation_1532068300614103040:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{37743DA7-5962-4ADE-AC67-16DCAB0B1F6C}' />
+    </worksheet>
+    <worksheet name='Fraud Transaction Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Fraudulent Transactions Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FraudTransactionOverTime' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[amount]' derivation='Sum' name='[sum:amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[sum:amount:qk]</rows>
+        <cols>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[yr:transaction_time:ok]</cols>
+      </table>
+      <simple-id uuid='{568EB699-E95E-4938-903A-9E0CD5816EF5}' />
+    </worksheet>
+    <worksheet name='Fraud by Card Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Card Type Fraud Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FraudbyCardType' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[card_type]' derivation='None' name='[none:card_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</rows>
+        <cols>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:card_type:nk]</cols>
+      </table>
+      <simple-id uuid='{E5410AFD-E599-430C-81C6-3824754752FC}' />
+    </worksheet>
+    <worksheet name='Fraud by Location'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Geographical Fraud Hotspots</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='FraudbyLocation' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount]' derivation='Sum' name='[sum:amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' />
+              <size column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[sum:amount:qk]' />
+              <lod column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:location:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:location:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{82F3517D-9BBE-49F9-B56F-027B1803648E}' />
+    </worksheet>
+    <worksheet name='Fraud type distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Types of Online Fraud</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Fraudtypedistribution' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[fraud_type]' derivation='None' name='[none:fraud_type:nk]' pivot='key' type='nominal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' />
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' />
+              <text column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:fraud_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0292A0EA-1AB8-4034-AA61-DBE4B1549540}' />
+    </worksheet>
+    <worksheet name='Merchant Risk'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>High-Risk Merchants</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='MerchantRisk' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[merchant_id]' derivation='None' name='[none:merchant_id:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:merchant_id:ok]</rows>
+        <cols>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</cols>
+      </table>
+      <simple-id uuid='{EA788B51-C5E4-423F-B619-FE7FE18E9BBA}' />
+    </worksheet>
+    <worksheet name='Spending by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Average Transaction by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='SpendingbyAge' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[customer_age]' peg='0' size='10' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column caption='Customer Age' datatype='real' name='[customer_age]' role='measure' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Customer Age (bin)]' derivation='None' name='[none:Customer Age (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[avg:amount:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[avg:amount:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[avg:amount:qk]</rows>
+        <cols>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:Customer Age (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{0476966B-582A-4DB8-B31A-EA23DC409724}' />
+    </worksheet>
+    <worksheet name='Total Fraud Amount'>
+      <repository-location id='TotalFraudAmount' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_fraudulent]' derivation='None' name='[none:is_fraudulent:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[amount]' derivation='Sum' name='[sum:amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]'>
+            <groupfilter function='level-members' level='[none:is_fraudulent:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='18' />
+            <format attr='font-weight' value='bold' />
+            <format attr='text-format' field='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[sum:amount:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[sum:amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F1577F62-AD8B-455F-A7EE-A3EFF158D6F1}' />
+    </worksheet>
+    <worksheet name='Total Transaction'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Transaction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='TotalTransaction' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_Inclusive_Indian_Online_Scam_Dataset (1)' name='federated.0ffinta1ynb5uq1b9w8211qu0iav' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ffinta1ynb5uq1b9w8211qu0iav'>
+            <column caption='Card Type' datatype='string' name='[card_type]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='Count' name='[cnt:transaction_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Fraudulent' datatype='real' name='[is_fraudulent]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column caption='Merchant Id' datatype='real' name='[merchant_id]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Month' name='[mn:transaction_time:ok]' pivot='key' type='ordinal' />
+            <column caption='Transaction Id' datatype='real' name='[transaction_id]' role='dimension' type='ordinal' />
+            <column caption='Transaction Time' datatype='datetime' name='[transaction_time]' role='dimension' type='ordinal' />
+            <column-instance column='[transaction_time]' derivation='Year' name='[yr:transaction_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_A6F9FFF6484442B1A01E2BE8BF9EFE32]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[card_type]' />
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]'>
+            <groupfilter function='level-members' level='[fraud_type]' user:ui-action-filter='[Action10_5BC1F2FFC56143919EC22D3EACDA709A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]'>
+            <groupfilter function='level-members' level='[is_fraudulent]' user:ui-action-filter='[Action6_D784499C609249C6A85C39098BBA3A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_370D62207AEB4D03B27988332BE4A5E0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[location]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action9_37254D368D58414FBDA1DC67BC5B9BD5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[mn:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action11_457615F3DFAB4DBABE97219207DB7D63]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[merchant_id]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_960BE8800DB44B0DA194828F75F30138]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[is_fraudulent]' />
+              <groupfilter function='level-members' level='[yr:transaction_time:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,YEAR(Transaction Time))]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Fraud Type)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Card Type,Is Fraudulent)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Location)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,Merchant Id)]</column>
+            <column>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[Action (Is Fraudulent,MONTH(Transaction Time))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='font-size' value='18' />
+            <format attr='font-weight' value='bold' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' value='20' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6F9339B5-9AC5-41B5-9A52-D0B817D2D4EC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Indian Online Fraud Detection Dashboard'>
+      <repository-location id='IndianOnlineFraudDetectionDashboard' path='/workbooks/IndianOnlineFraudDetection' revision='' />
+      <style />
+      <size maxheight='1169' maxwidth='1654' minheight='1169' minwidth='1654' preset-index='14' sizing-mode='fixed' />
+      <zones>
+        <zone h='10607' id='3' name='Total Transaction' w='22007' x='2358' y='11463' />
+        <zone h='10607' id='4' name='Fradulent Transaction' w='21886' x='26239' y='11377' />
+        <zone h='10607' id='5' name='Total Fraud Amount' w='23337' x='49698' y='11121' />
+        <zone h='10009' id='6' name='Fraud Rate(%)' w='21765' x='74728' y='11634' />
+        <zone h='25834' id='7' name='Fraud Transaction Over Time' w='26119' x='665' y='22840' />
+        <zone h='7956' id='8' name='Fraud Transaction Over Time' pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type-v2='color' w='5985' x='25030' y='25749' />
+        <zone h='23952' id='9' name='Fraud Distribution' w='22551' x='33857' y='24722' />
+        <zone h='4363' id='10' name='Fraud Distribution' pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' type-v2='size' w='8464' x='48670' y='28144' />
+        <zone h='21985' id='11' name='Fraud by Location' w='28658' x='1330' y='52181' />
+        <zone h='22156' id='12' name='Fraud Over Time' w='29202' x='33011' y='51839' />
+        <zone h='25235' id='13' name='Fraud by Card Type' w='30774' x='65478' y='22327' />
+        <zone h='21129' id='14' name='Fraud type distribution' w='22612' x='65054' y='48845' />
+        <zone h='6330' id='15' name='Fraud type distribution' pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' type-v2='color' w='6711' x='88513' y='53721' />
+        <zone h='21471' id='20' name='Spending by Age' w='27207' x='2177' y='76390' />
+        <zone h='22241' id='23' name='Merchant Risk' w='32648' x='38815' y='76219' />
+        <zone forceUpdate='true' h='7442' id='24' type-v2='text' w='93229' x='2116' y='855'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>INDIAN ONLINE FRAUD DETECTION</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='3000' minheight='3000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98632' id='29' param='vert' type-v2='layout-flow' w='99032' x='484' y='684'>
+                <zone forceUpdate='true' h='7442' id='24' type-v2='text' w='93229' x='2116' y='855'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>INDIAN ONLINE FRAUD DETECTION</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='10607' id='5' is-fixed='true' name='Total Fraud Amount' w='23337' x='49698' y='11121'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='10607' id='4' is-fixed='true' name='Fradulent Transaction' w='21886' x='26239' y='11377'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='10607' id='3' is-fixed='true' name='Total Transaction' w='22007' x='2358' y='11463'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='10009' id='6' is-fixed='true' name='Fraud Rate(%)' w='21765' x='74728' y='11634'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='25235' id='13' is-fixed='true' name='Fraud by Card Type' w='30774' x='65478' y='22327'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='25834' id='7' is-fixed='true' name='Fraud Transaction Over Time' w='26119' x='665' y='22840'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7956' id='8' name='Fraud Transaction Over Time' pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type-v2='color' w='5985' x='25030' y='25749'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23952' id='9' is-fixed='true' name='Fraud Distribution' w='22551' x='33857' y='24722'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4363' id='10' name='Fraud Distribution' pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' type-v2='size' w='8464' x='48670' y='28144'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='21129' id='14' is-fixed='true' name='Fraud type distribution' w='22612' x='65054' y='48845'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6330' id='15' name='Fraud type distribution' pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' type-v2='color' w='6711' x='88513' y='53721'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='259' h='22156' id='12' is-fixed='true' name='Fraud Over Time' w='29202' x='33011' y='51839'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='257' h='21985' id='11' is-fixed='true' name='Fraud by Location' w='28658' x='1330' y='52181'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='22241' id='23' is-fixed='true' name='Merchant Risk' w='32648' x='38815' y='76219'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='21471' id='20' is-fixed='true' name='Spending by Age' w='27207' x='2177' y='76390'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1AA5769E-F013-493F-A3C4-24440E282A37}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Fraud Transaction Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[yr:transaction_time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{25863757-A1F4-491C-B4CA-EAF6D3110DFE}' />
+    </window>
+    <window class='worksheet' name='Fraud Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{61F09E41-09FA-4615-B5C4-14F46B922D77}' />
+    </window>
+    <window class='worksheet' name='Fraud by Location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2A5FB858-679A-4F78-BF62-9D1A14CDB5B8}' />
+    </window>
+    <window class='worksheet' name='Fraud Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[mn:transaction_time:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[yr:transaction_time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{98E28D85-CD39-4704-8193-1DDFD2B48F07}' />
+    </window>
+    <window class='worksheet' name='Fraud by Card Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:card_type:nk]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{549AAEA1-428A-4EE4-A9F0-C54FB02E9B06}' />
+    </window>
+    <window class='worksheet' name='Spending by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:Customer Age (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D3ABA324-3AA7-4CB3-B318-78C2F48DC7DD}' />
+    </window>
+    <window class='worksheet' name='Fraud type distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:fraud_type:nk]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AF63C932-83E7-4D57-ACD6-23293924EBF9}' />
+    </window>
+    <window class='worksheet' name='Merchant Risk'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:merchant_id:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{063511D4-1ACB-469E-A3F4-6B8A5632B7E2}' />
+    </window>
+    <window class='worksheet' name='Total Transaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7478</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3B7EF5E5-796D-4417-BBE6-5FEF57C0D8C0}' />
+    </window>
+    <window class='worksheet' name='Fradulent Transaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>40</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:transaction_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CF2D12FB-6EFD-41D5-8C89-97135284555D}' />
+    </window>
+    <window class='worksheet' name='Total Fraud Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[none:is_fraudulent:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5596240A-B934-478C-A1AB-B13FBFAD4E50}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate(%)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FFD4CC75-AE0D-4872-A32A-2B061FA22518}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Indian Online Fraud Detection Dashboard'>
+      <viewpoints>
+        <viewpoint name='Fradulent Transaction'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</field>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[sum:amount:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>7478</value>
+                  <value>44655041.662500277</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Fraud Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Rate(%)'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</field>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[usr:Calculation_1532068300614103040:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>7478</value>
+                  <value>30.288847285370419</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Fraud Transaction Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud by Card Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud by Location'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud type distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Merchant Risk'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Spending by Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Fraud Amount'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</field>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[sum:amount:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>7478</value>
+                  <value>44655041.662500277</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Total Transaction'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0ffinta1ynb5uq1b9w8211qu0iav].[cnt:transaction_id:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>7478</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{198B848D-8F7D-4F80-AF60-84A49BDA1807}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Indian Online Fraud Detection Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
