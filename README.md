@@ -43,3 +43,5 @@ To interact with the full Tableau dashboard:
 1.  **Download:** Download the `Indian Online Fraud Detection.twbx` file from this repository.
 2.  **Install:** Ensure you have **Tableau Reader** (free) or **Tableau Desktop** installed on your system.
 3.  **Open:** Open the `.twbx` file directly with the Tableau application to explore the visualizations, apply filters, and examine the data presented.
+
+## Dashboard link of Tableau : https://public.tableau.com/app/profile/manisha.biswas/viz/IndianOnlineFraudDetection/IndianOnlineFraudDetectionDashboard?publish=yes
